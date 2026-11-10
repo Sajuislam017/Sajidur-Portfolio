@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional career portfolio of MD. Sajidur Rahman — Management Graduate, Operations, Business Support and Administration.">
+  <meta name="theme-color" content="#102b46">
+  <title>MD. Sajidur Rahman | Professional Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#102b46;--navy2:#173d5d;--teal:#168c91;--teal2:#dff3f1;--ink:#1d2a36;--muted:#647586;--line:#e5ebef;--paper:#fff;--wash:#f5f8fa;--gold:#d6b46a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 44px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,235,239,.9)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font:800 15px Manrope,sans-serif;letter-spacing:.04em;color:var(--navy)}.brand span{color:var(--teal)}
+    .navlinks{display:flex;gap:25px;align-items:center;font-size:13px;font-weight:600;color:#526272}
+    .navlinks a:hover{color:var(--teal)}.nav-cta{padding:10px 16px;border-radius:8px;background:var(--navy);color:#fff!important}
+    .menu{display:none;border:0;background:none;font-size:25px;color:var(--navy)}
+    .hero{background:linear-gradient(115deg,#102b46 0%,#163b59 65%,#175a66 100%);color:#fff;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-160px;top:-245px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.45fr .75fr;gap:60px;align-items:center;padding:94px 0 88px}
+    .eyebrow{font-size:11px;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:#8fe0d8;display:flex;align-items:center;gap:10px}
+    .eyebrow:before{content:"";height:2px;width:28px;background:#65c7bd}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.2}h1{font-size:clamp(38px,5.5vw,65px);letter-spacing:-.045em;margin:18px 0 13px;font-weight:800}
+    .hero h1 span{color:#8fe0d8}.hero-title{font:600 clamp(14px,1.6vw,18px) Manrope,sans-serif;letter-spacing:.07em;color:#e3edf3;text-transform:uppercase}
+    .hero-copy{max-width:650px;color:#d3e0e9;font-size:16px;margin:22px 0 28px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:8px;font-weight:700;font-size:13px;transition:.2s;border:1px solid transparent}
+    .btn-primary{background:#79d1c8;color:#0d2c43}.btn-primary:hover{background:#a0e2db;transform:translateY(-2px)}
+    .btn-outline{border-color:rgba(255,255,255,.35);color:#fff}.btn-outline:hover{background:rgba(255,255,255,.1)}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px;color:#c4d5df;font-size:12px}.hero-meta span{display:flex;align-items:center;gap:7px}
+    .profile-wrap{display:flex;justify-content:center;position:relative}
+    .profile-frame{width:270px;height:310px;border:1px solid rgba(255,255,255,.35);padding:12px;border-radius:150px 150px 22px 22px;position:relative;background:rgba(255,255,255,.07)}
+    .profile-photo{width:100%;height:100%;border-radius:140px 140px 14px 14px;object-fit:cover;background:linear-gradient(145deg,#e8f3f4,#c5dadd);display:flex;align-items:center;justify-content:center;color:var(--navy);font:800 60px Manrope}
+    .profile-note{position:absolute;bottom:22px;right:-38px;background:#fff;color:var(--navy);padding:12px 15px;border-radius:9px;box-shadow:0 14px 35px #071c2b55;font-size:11px;font-weight:700;letter-spacing:.04em}
+    .profile-note b{display:block;color:var(--teal);font-size:17px}
+    section{padding:82px 0}.section-kicker{color:var(--teal);font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .section-title{font-size:clamp(27px,3vw,38px);color:var(--navy);letter-spacing:-.035em;margin:10px 0 12px}
+    .section-intro{color:var(--muted);max-width:690px;margin:0;font-size:15px}
+    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:65px;align-items:start;margin-top:35px}
+    .about-copy p{color:#526272;margin:0 0 15px}.quickfacts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .fact{padding:18px;border:1px solid var(--line);border-radius:11px;background:#fff}.fact strong{display:block;color:var(--navy);font:700 15px Manrope}.fact small{color:var(--muted);font-size:11px}
+    .stats{background:var(--wash);padding:30px 0}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.stat{text-align:center;padding:10px}.stat strong{display:block;color:var(--navy);font:800 31px Manrope}.stat span{font-size:12px;color:var(--muted)}
+    .soft{background:var(--wash)}.timeline{margin-top:36px;display:grid;gap:16px}.job{display:grid;grid-template-columns:190px 1fr;gap:25px;padding:25px;background:#fff;border:1px solid var(--line);border-radius:12px}
+    .job-date{font-size:12px;color:var(--teal);font-weight:800;letter-spacing:.04em}.job h3{font-size:17px;color:var(--navy);margin:0 0 5px}.job-company{font-size:13px;color:#637486;font-weight:600;margin-bottom:12px}.job ul{padding-left:18px;margin:0;color:#566676;font-size:13px}.job li{margin:5px 0}
+    .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:34px}.edu{border:1px solid var(--line);border-radius:12px;padding:22px}.edu h3{font-size:16px;color:var(--navy);margin:0 0 6px}.edu .school{font-size:13px;color:#526272}.edu .result{margin-top:12px;color:var(--teal);font-weight:800;font-size:12px}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}.skill-card{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}.skill-icon{width:38px;height:38px;border-radius:10px;background:var(--teal2);color:var(--teal);display:grid;place-items:center;font-size:17px}.skill-card h3{font-size:15px;color:var(--navy);margin:14px 0 8px}.skill-card p{font-size:12px;color:var(--muted);margin:0}
+    .certs{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.chip{background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:7px;color:#4e6070;font-size:12px}
+    .contact{background:linear-gradient(115deg,#102b46,#17485c);color:#fff}.contact .section-title{color:#fff}.contact .section-intro{color:#d1e0e8}
+    .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;margin-top:35px;align-items:center}.contact-list{display:grid;gap:14px}.contact-item{display:flex;gap:13px;align-items:center;color:#e1edf2;font-size:13px}.contact-item b{display:block;color:#8fe0d8;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+    .contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:25px;border-radius:13px}.contact-card h3{font-size:19px;margin:0 0 10px}.contact-card p{color:#d1e0e8;font-size:13px;margin:0 0 20px}
+    footer{padding:24px 0;background:#0b2034;color:#aebfca;font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .reveal{animation:rise .7s ease both}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+    @media(max-width:800px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero-grid{grid-template-columns:1fr;gap:38px;padding:68px 0}.profile-wrap{grid-row:1}.profile-frame{width:210px;height:240px}.profile-note{right:-25px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.job{grid-template-columns:1fr;gap:8px}.skills-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:540px){.container{width:min(100% - 32px,1120px)}section{padding:62px 0}.hero-grid{padding:54px 0}.profile-frame{width:180px;height:210px}.hero-copy{font-size:14px}.stats-grid{grid-template-columns:1fr 1fr}.stat strong{font-size:25px}.edu-grid,.skills-grid{grid-template-columns:1fr}.quickfacts{grid-template-columns:1fr 1fr}.footer-row{display:block}.footer-row span{display:block;margin:5px 0}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home">SAJIDUR <span>RAHMAN</span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+    <nav class="navlinks">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact" class="nav-cta">Contact Me</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">Professional Career Portfolio</div>
+        <h1>MD. SAJIDUR<br><span>RAHMAN</span></h1>
+        <div class="hero-title">Management Graduate</div>
+        <p class="hero-copy">A management professional with practical experience in retail operations, program coordination, leadership, business support and hands-on technical work. Focused on dependable execution, clear communication and continuous learning.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="assets/MD_Sajidur_Rahman_CV.pdf" download>↓ &nbsp; Download CV</a>
+          <a class="btn btn-outline" href="#contact">Get in Touch &nbsp; ↗</a>
+        </div>
+        <div class="hero-meta"><span>⌖ Dhaka, Bangladesh</span><span>✉ sajislam017@gmail.com</span></div>
+      </div>
+      <div class="profile-wrap">
+        <div class="profile-frame">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Professional portrait of MD. Sajidur Rahman" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="profile-photo" style="display:none">SR</div>
+        </div>
+        <div class="profile-note"><b>Career Focus</b>Operations · Business Support</div>
+      </div>
+    </div>
+  </section>
+  <div class="stats"><div class="container stats-grid">
+    <div class="stat"><strong>5,400+</strong><span>Scholarship registrations coordinated</span></div>
+    <div class="stat"><strong>500+</strong><span>Event participants supported</span></div>
+    <div class="stat"><strong>10+</strong><span>Years of practical experience*</span></div>
+  </div></div>
+  <section id="about">
+    <div class="container">
+      <div class="section-kicker">Profile</div><h2 class="section-title">About Me</h2>
+      <p class="section-intro">A practical, adaptable management graduate who combines academic knowledge with real-world operational experience.</p>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I hold BBA and MBA degrees in Management and have developed practical experience across retail operations, customer service, inventory handling, program coordination, event logistics and administrative support.</p>
+          <p>My experience includes coordinating a merit scholarship programme with more than 5,400 registrations, supporting youth events involving 500+ participants, maintaining retail stock and sales records, and contributing to hands-on repair and maintenance work.</p>
+          <p>I value integrity, accountability, teamwork and continuous improvement. I am interested in opportunities where I can contribute to banking, operations, administration and business support functions.</p>
+        </div>
+        <div class="quickfacts">
+          <div class="fact"><strong>Management</strong><small>BBA & MBA</small></div>
+          <div class="fact"><strong>Operations</strong><small>Retail & inventory</small></div>
+          <div class="fact"><strong>Coordination</strong><small>Programmes & events</small></div>
+          <div class="fact"><strong>Technology</strong><small>Office tools & IT support</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="soft" id="experience">
+    <div class="container">
+      <div class="section-kicker">Career History</div><h2 class="section-title">Professional Experience</h2>
+      <p class="section-intro">Hands-on roles spanning retail supervision, programme coordination, event support and technical work.</p>
+      <div class="timeline">
+        <article class="job"><div class="job-date">2014 — 2017</div><div><h3>Store & Retail Supervisor</h3><div class="job-company">Sadia Cycle & Auto Spares</div><ul><li>Managed retail counter sales and day-to-day customer service for bicycle, van and auto-rickshaw spare parts.</li><li>Supported stock monitoring, product replenishment, cash sales and credit/due account records.</li><li>Coordinated with wholesale suppliers and responded to customer product enquiries.</li></ul></div></article>
+        <article class="job"><div class="job-date">2025</div><div><h3>Program Coordinator</h3><div class="job-company">Merit Scholarship Program</div><ul><li>Coordinated a scholarship programme involving 5,400+ registrations.</li><li>Supported participant communication, scheduling, assessment logistics, records and award distribution.</li><li>Worked with team members to keep programme activities organised and on schedule.</li></ul></div></article>
+        <article class="job"><div class="job-date">Project-based</div><div><h3>Event & Logistics Support</h3><div class="job-company">Youth Events & Seminars</div><ul><li>Supported events and seminars involving 500+ participants.</li><li>Assisted with venue preparation, seating, logistics, communication and participant coordination.</li></ul></div></article>
+        <article class="job"><div class="job-date">Long-term practical experience</div><div><h3>Repair, Maintenance, Welding & Fabrication</h3><div class="job-company">Family-based Technical Work</div><ul><li>Practical repair and maintenance of bicycles, vans and auto-rickshaws, including charger auto-rickshaws.</li><li>Experience with basic welding, metal fabrication and first-level troubleshooting.</li></ul></div></article>
+      </div>
+    </div>
+  </section>
+  <section id="education">
+    <div class="container">
+      <div class="section-kicker">Academic Background</div><h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+        <div class="edu"><h3>Master of Business Administration (MBA)</h3><div class="school">Management · Carmichael College, Rangpur</div><div class="result">CGPA: 2.78 / 4.00 · 2022</div></div>
+        <div class="edu"><h3>Bachelor of Business Administration (BBA)</h3><div class="school">Management · Mohipur Hazi Mohsin Govt. College</div><div class="result">CGPA: 2.82 / 4.00 · 2021</div></div>
+        <div class="edu"><h3>Higher Secondary Certificate (HSC)</h3><div class="school">Business Studies · Phulbari Govt. College</div><div class="result">GPA: 3.42 / 5.00 · 2016</div></div>
+        <div class="edu"><h3>Secondary School Certificate (SSC)</h3><div class="school">Science · Phulbari Model High School</div><div class="result">GPA: 3.25 / 5.00 · 2014</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="soft" id="skills">
+    <div class="container">
+      <div class="section-kicker">Capabilities</div><h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-intro">A balanced mix of business, coordination, digital and practical problem-solving skills.</p>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon">▦</div><h3>Business Operations</h3><p>Retail operations, customer service, inventory and stock monitoring, sales support and supplier coordination.</p></div>
+        <div class="skill-card"><div class="skill-icon">◎</div><h3>Programme Coordination</h3><p>Event logistics, scheduling, participant records, communication and team coordination.</p></div>
+        <div class="skill-card"><div class="skill-icon">▤</div><h3>Microsoft Office</h3><p>Microsoft Word, Excel, PowerPoint, data entry, sorting, filtering, basic formulas and documentation.</p></div>
+        <div class="skill-card"><div class="skill-icon">⌘</div><h3>Digital & IT Support</h3><p>Computer hardware/software troubleshooting, email, internet, presentations and digital research tools.</p></div>
+        <div class="skill-card"><div class="skill-icon">⚙</div><h3>Technical Skills</h3><p>Practical repair, maintenance, basic welding, fabrication and hands-on troubleshooting.</p></div>
+        <div class="skill-card"><div class="skill-icon">✦</div><h3>Professional Strengths</h3><p>Integrity, accountability, adaptability, teamwork, communication and time management.</p></div>
+      </div>
+      <h3 style="font:700 16px Manrope;color:var(--navy);margin:35px 0 0">Training & Certifications</h3>
+      <div class="certs">
+        <span class="chip">Excel Essentials for Workplace Productivity · 2026</span>
+        <span class="chip">Cyber Hygiene · 2026</span>
+        <span class="chip">Computer Office Application · BTEB · 2022</span>
+        <span class="chip">Video Editing with Premiere Pro · 2023</span>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-kicker">Let's Connect</div><h2 class="section-title">Contact Me</h2>
+      <p class="section-intro">I welcome opportunities in banking, business operations, administration and corporate support.</p>
+      <div class="contact-grid">
+        <div class="contact-list">
+          <div class="contact-item"><span>✉</span><div><b>Email</b>sajislam017@gmail.com</div></div>
+          <div class="contact-item"><span>☎</span><div><b>Mobile</b>+880 1783192397</div></div>
+          <div class="contact-item"><span>⌖</span><div><b>Location</b>Dhaka, Bangladesh</div></div>
+          <div class="contact-item"><span>in</span><div><b>LinkedIn</b><a href="https://www.linkedin.com/in/md-sajidur-rahman77/" target="_blank" rel="noopener">linkedin.com/in/md-sajidur-rahman77</a></div></div>
+        </div>
+        <div class="contact-card"><h3>Download my professional CV</h3><p>For a detailed overview of my qualifications, experience and skills, please download my CV.</p><a class="btn btn-primary" href="assets/MD_Sajidur_Rahman_CV.pdf" download>↓ &nbsp; Download CV (PDF)</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year"></span> MD. Sajidur Rahman. All rights reserved.</span><span>Designed with clarity · Built for professional opportunities</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));</script>
+</body>
+</html>
